@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 // 앱 시작 전 3초 대기 화면
 public class Intro extends Activity {
     Handler handler = new Handler();
@@ -23,6 +25,11 @@ public class Intro extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.intro);
+        LottieAnimationView animationView = (LottieAnimationView) findViewById(R.id.animation_view);
+        // 반복 설정
+        animationView.loop(true);
+        // 실행
+        animationView.playAnimation();
     }
 
     @Override

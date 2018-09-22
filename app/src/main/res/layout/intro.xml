@@ -6,8 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".Intro">
 
-    <TextView
-        android:text="띠용~~~~~"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        app:lottie_fileName="dino_dance.json"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </android.support.constraint.ConstraintLayout>
